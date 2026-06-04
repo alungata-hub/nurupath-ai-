@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 150 30% 5%;
+    --card: 0 0% 100%;
+    --card-foreground: 150 30% 5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 30% 5%;
+    --primary: 142 71% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 93% 47%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 120 10% 96%;
+    --muted-foreground: 150 10% 40%;
+    --accent: 45 93% 47%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 120 10% 90%;
+    --input: 120 10% 90%;
+    --ring: 142 71% 45%;
+    --chart-1: 142 71% 45%;
+    --chart-2: 45 93% 47%;
+    --chart-3: 150 30% 35%;
+    --chart-4: 45 70% 55%;
+    --chart-5: 142 50% 30%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 150 30% 4%;
+    --foreground: 120 10% 95%;
+    --card: 150 30% 6%;
+    --card-foreground: 120 10% 95%;
+    --popover: 150 30% 6%;
+    --popover-foreground: 120 10% 95%;
+    --primary: 142 71% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 93% 47%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 150 15% 15%;
+    --muted-foreground: 120 10% 60%;
+    --accent: 45 93% 47%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 150 15% 18%;
+    --input: 150 15% 18%;
+    --ring: 142 71% 45%;
+    --chart-1: 142 71% 55%;
+    --chart-2: 45 93% 55%;
+    --chart-3: 150 30% 45%;
+    --chart-4: 45 70% 60%;
+    --chart-5: 142 50% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
